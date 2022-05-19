@@ -14,6 +14,7 @@
   <div class="container">
 
    <!--  header -->
+
     <header class="header">
       <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo">
       <input type="text" class="input input-addres" placeholder="Адрес доставки">
@@ -28,14 +29,20 @@
         </button>
       </div>
     </header>
+  </div>
 
-   <!--  promo -->
+    <main class="main">
+      <div class="container">
+
+         <!--  promo -->
+
     <section class="promo">
       <h1 class="promo-title">Онлайн-сервис <br> доставки еды на дом</h1>
       <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
     </section>
 
     <!-- restaurants -->
+
     <section class="restaurants">
       <div class="section-heading">
         <h2 class="section-title">Рестораны</h2>
@@ -43,6 +50,7 @@
       </div>
 
       <!-- cards -->
+
       <div class="cards">
 
         <div class="card">
@@ -141,14 +149,42 @@
           </div>
         </div>
 
-        
-
-
       </div>
-
     </section>
 
-  </div>
+      </div>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo footer-logo" >
+          <nav class="footer-nav">
+            <a href="#" class="footer-link">Ресторанам </a>
+            <a href="#" class="footer-link">Курьерам</a>
+            <a href="#" class="footer-link">Пресс-центр</a>
+            <a href="#" class="footer-link">Контакты</a>
+          </nav>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <img src="<%=require("./images/social/inst.svg")%>" alt="instagram">
+            </a>
+            <a href="#" class="social-link">
+              <img src="<%=require("./images/social/face.svg")%>" alt="facebok">
+            </a>
+            <a href="#" class="social-link">
+              <img src="<%=require("./images/social/vk.svg")%>" alt="vk">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+ 
   
 </body>
 </html>

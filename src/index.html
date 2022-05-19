@@ -12,9 +12,11 @@
 </head>
 <body>
   <div class="container">
+
+   <!--  header -->
     <header class="header">
       <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo">
-      <input type="text" class="input search-input" placeholder="Адрес доставки">
+      <input type="text" class="input input-addres" placeholder="Адрес доставки">
       <div class="buttons">
         <button class="button button-primery">
           <img class="btn-icon" src="<%=require("./images/icon_btn.svg")%>"  alt="user">
@@ -33,6 +35,118 @@
       <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
     </section>
 
+    <!-- restaurants -->
+    <section class="restaurants">
+      <div class="section-heading">
+        <h2 class="section-title">Рестораны</h2>
+        <input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов">
+      </div>
+
+      <!-- cards -->
+      <div class="cards">
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/pizza_plus.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">Пицца плюс</h3>
+              <span class="card-tag tag">30 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.2</div>
+              <div class="price">От 1700 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/tanuci.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">Тануки</h3>
+              <span class="card-tag tag">50 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.6</div>
+              <div class="price">От 1200 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/foodBand.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">FoodBand</h3>
+              <span class="card-tag tag">60 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.5</div>
+              <div class="price">От 1400 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/jadina.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">Жадина-пицца</h3>
+              <span class="card-tag tag">50 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.1</div>
+              <div class="price">От 2400 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/tochka.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">Точка еды</h3>
+              <span class="card-tag tag">50 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.7</div>
+              <div class="price">От 2500 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="<%=require("./images/restaurants/PizzaBurger.jpg")%>"  alt="image" 
+          class="card-image" >
+          <div class="card-text">
+            <div class="card-heading">
+              <h3 class="card-title">PizzaBurger</h3>
+              <span class="card-tag tag">40 мин</span>
+            </div>
+            <div class="card-info">
+              <div class="rating">&#9733; 4.5</div>
+              <div class="price">От 900 ₽</div>
+              <div class="category">Пицца </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+
+    </section>
 
   </div>
   

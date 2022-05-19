@@ -19,20 +19,26 @@ body {
   justify-content: space-between;
   margin: 44px 0 40px;
 }
-
-.search-input {
+.input {
   background: #ffffff;
   border: 1px solid #d9d9d9;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  height: 40px;
-  width: 690px;
   font-size: 16px;
   line-height: 24px;
-  background-image: url(../images/home_input.svg);
-  background-repeat: no-repeat;
-  background-position: left 11px center;
+  padding: 8px;
   padding-left: 35px;
+  background-position: left 11px center;
+  background-repeat: no-repeat;
+}
+.input-addres {
+  width: 690px;
+  background-image: url(../images/home_input.svg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-search {
+  width: 300px;
+  background-image: url(../images/search.svg);
 }
 
 .buttons {
@@ -65,8 +71,11 @@ body {
   margin-right: 6px;
 }
 
+/* promo */
+
 .promo {
   padding: 86px 70px;
+  margin-bottom: 56px;
   background: #fff1b8 url(../images/promo_bg.png) no-repeat top 150px right -150px /
     800px;
   border-radius: 10px;
@@ -87,4 +96,113 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+}
+
+/* restaurants */
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0;
+}
+
+/* cards */
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  overflow: hidden;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.card-image {
+  width: 384px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 20px 23px 35px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.card-tag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #262626;
+  border-radius: 2px;
+  padding: 1px 8px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  margin-right: 26px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffc107;
+}
+
+.price,
+.category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8c8c8c;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.price::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 10px;
 }

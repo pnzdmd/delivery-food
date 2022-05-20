@@ -11,6 +11,7 @@
   <!-- подлкючение Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/index.css">
   <title>Тануки - доставка еды на дом</title>
 </head>
@@ -18,7 +19,6 @@
   <div class="container">
 
    <!--  header -->
-
     <header class="header">
       <a class="logo" href="index.html">
         <img src="./images/logo.svg" alt="logo">
@@ -40,8 +40,8 @@
 
     <main class="main">
       <div class="container">
-    <!-- restaurants -->
 
+    <!-- restaurants -->
     <section class="restaurants">
       <div class="section-heading">
         <h2 class="section-title">Тануки</h2>
@@ -53,7 +53,6 @@
       </div>
 
       <!-- cards -->
-
       <div class="cards">
         <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.2s">
           <img src="./images/tanuki/roll.jpg" alt="image" 
@@ -160,7 +159,7 @@
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл с креветкой стандарт</h3>
+              <h3 class="card-title card-title-reg">Ролл с креветкой</h3>
             </div>
             <div class="card-info">
               <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
@@ -181,7 +180,6 @@
     </main>
 
     <!-- footer -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
@@ -208,15 +206,12 @@
     </footer>
 
    <!--  modal -->
-
    <div class="modal">
      <div class="modal-dialog">
-
        <div class="modal-header">
          <h3 class="modal-title">Корзина</h3>
          <button class="modal-close close-cart">&times;</button>
        </div>
-
        <div class="modal-body">
          <div class="food-row">
            <span class="food-name">Ролл угорь стандарт</span>
@@ -264,18 +259,16 @@
           </div>
         </div>
 
-         
-     </div>
-
-     <div class="modal-footer">
-       <span class="modal-pricetag">1250 ₽</span>
-       <div class="footer-buttons">
-         <button class="button button-primery">Оформить заказ</button>
-         <button class="button close-cart">Отмена</button>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-pricetag">1250 ₽</span>
+        <div class="footer-buttons">
+          <button class="button button-primery">Оформить заказ</button>
+          button class="button close-cart">Отмена</button>
        </div>
-     </div>
-
-   </div>
+      </div>
+    </div>
+  </div>
   <script src="./pages/wow.min.js"></script>
   <script src="./pages/index.js"></script>
 </body>

@@ -39,6 +39,7 @@ body {
 .input-search {
   width: 300px;
   background-image: url(../images/search.svg);
+  margin-left: auto;
 }
 
 .buttons {
@@ -65,6 +66,10 @@ body {
   background: #1890ff;
   border: 1px solid #1890ff;
   color: #fff;
+}
+
+.button-card-text {
+  margin-right: 10px;
 }
 
 .btn-icon {
@@ -111,7 +116,6 @@ body {
 .section-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 44px;
 }
 
@@ -122,6 +126,7 @@ body {
   line-height: 42px;
   color: #000000;
   margin: 0;
+  margin-right: 30px;
 }
 
 /* cards */
@@ -141,6 +146,7 @@ body {
   color: #000000;
   margin-bottom: 30px;
   flex-basis: 31%;
+  text-decoration: none;
 }
 
 .card-image {
@@ -167,6 +173,10 @@ body {
   margin: 0;
 }
 
+.card-title-reg {
+  font-weight: 400;
+}
+
 .card-tag {
   font-style: normal;
   font-weight: 400;
@@ -182,6 +192,18 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.card-price-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 32px;
+}
+.card-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
 }
 
 .rating {
@@ -211,6 +233,14 @@ body {
   overflow: hidden;
   white-space: nowrap;
   max-width: 150px;
+}
+
+.ingredients {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
 }
 
 .price::after {
@@ -322,7 +352,7 @@ body {
   .card-info {
     flex-wrap: wrap;
   }
-  .rating {
+  .card .rating {
     flex-basis: 100%;
   }
   .card-title {

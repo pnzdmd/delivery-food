@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Delivery Food</title>
 </head>
 <body>
@@ -16,15 +17,18 @@
    <!--  header -->
 
     <header class="header">
-      <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo">
+      <a class="logo" href="index.html">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+     
       <input type="text" class="input input-addres" placeholder="Адрес доставки">
       <div class="buttons">
         <button class="button button-primery">
-          <img class="btn-icon" src="<%=require("./images/icon_btn.svg")%>"  alt="user">
+          <img class="btn-icon" src="./images/icon_btn.svg"  alt="user">
           <span class="btn-text">Войти</span>
         </button>
         <button class="button">
-          <img class="btn-icon" src="<%=require("./images/cart.svg")%>"  alt="cart">
+          <img class="btn-icon" src="./images/cart.svg"  alt="cart">
           <span class="btn-text">Корзина</span>
         </button>
       </div>
@@ -53,8 +57,8 @@
 
       <div class="cards">
 
-        <div class="card">
-          <img src="<%=require("./images/restaurants/pizza_plus.jpg")%>"  alt="image" 
+        <a href="restaurants.html" class="card">
+          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -67,10 +71,10 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
+        </a>
 
         <div class="card">
-          <img src="<%=require("./images/restaurants/tanuci.jpg")%>"  alt="image" 
+          <img src="./images/restaurants/tanuci.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -86,7 +90,7 @@
         </div>
 
         <div class="card">
-          <img src="<%=require("./images/restaurants/foodBand.jpg")%>"  alt="image" 
+          <img src="./images/restaurants/foodBand.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -102,7 +106,7 @@
         </div>
 
         <div class="card">
-          <img src="<%=require("./images/restaurants/jadina.jpg")%>"  alt="image" 
+          <img src="./images/restaurants/jadina.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -118,7 +122,7 @@
         </div>
 
         <div class="card">
-          <img src="<%=require("./images/restaurants/tochka.jpg")%>"  alt="image" 
+          <img src="./images/restaurants/tochka.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -134,7 +138,7 @@
         </div>
 
         <div class="card">
-          <img src="<%=require("./images/restaurants/PizzaBurger.jpg")%>"  alt="image" 
+          <img src="./images/restaurants/PizzaBurger.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -161,7 +165,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
-          <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo footer-logo" >
+          <img src="./images/logo.svg" alt="logo" class="logo footer-logo" >
           <nav class="footer-nav">
             <a href="#" class="footer-link">Ресторанам </a>
             <a href="#" class="footer-link">Курьерам</a>
@@ -170,13 +174,13 @@
           </nav>
           <div class="social-links">
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/inst.svg")%>" alt="instagram">
+              <img src="./images/social/inst.svg" alt="instagram">
             </a>
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/face.svg")%>" alt="facebok">
+              <img src="./images/social/face.svg" alt="facebok">
             </a>
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/vk.svg")%>" alt="vk">
+              <img src="./images/social/vk.svg" alt="vk">
             </a>
           </div>
         </div>

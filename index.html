@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./pages/index.css">
+  <!-- подлкючение Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./style/index.css">
   <title>Delivery Food</title>
 </head>
 <body>
@@ -20,14 +23,14 @@
       <a class="logo" href="index.html">
         <img src="./images/logo.svg" alt="logo">
       </a>
-     
+
       <input type="text" class="input input-addres" placeholder="Адрес доставки">
       <div class="buttons">
         <button class="button button-primery">
           <img class="btn-icon" src="./images/icon_btn.svg"  alt="user">
           <span class="btn-text">Войти</span>
         </button>
-        <button class="button">
+        <button class="button" id="button-cart">
           <img class="btn-icon" src="./images/cart.svg"  alt="cart">
           <span class="btn-text">Корзина</span>
         </button>
@@ -57,7 +60,7 @@
 
       <div class="cards">
 
-        <a href="restaurants.html" class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.2s">
           <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -73,7 +76,7 @@
           </div>
         </a>
 
-        <div class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.4s">
           <img src="./images/restaurants/tanuci.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -87,9 +90,9 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.6s">
           <img src="./images/restaurants/foodBand.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -103,9 +106,9 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.2s">
           <img src="./images/restaurants/jadina.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -119,9 +122,9 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.4s">
           <img src="./images/restaurants/tochka.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -135,9 +138,9 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="restaurants.html" class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.6s">
           <img src="./images/restaurants/PizzaBurger.jpg"  alt="image" 
           class="card-image" >
           <div class="card-text">
@@ -151,14 +154,11 @@
               <div class="category">Пицца </div>
             </div>
           </div>
-        </div>
-
+        </a>
       </div>
     </section>
-
       </div>
     </main>
-
 
     <!-- footer -->
 
@@ -189,6 +189,7 @@
 
   
  
-  
+  <script src="./pages/wow.min.js"></script>
+  <script src="./pages/index.js"></script>
 </body>
 </html>

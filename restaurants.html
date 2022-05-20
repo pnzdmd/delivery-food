@@ -8,8 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./pages/index.css">
-  <title>PizzaBurger - доставка еды на дом</title>
+  <!-- подлкючение Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./style/index.css">
+  <title>Тануки - доставка еды на дом</title>
 </head>
 <body>
   <div class="container">
@@ -17,14 +20,17 @@
    <!--  header -->
 
     <header class="header">
-      <img src="./images/logo.svg" alt="logo" class="logo">
+      <a class="logo" href="index.html">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+     
       <input type="text" class="input input-addres" placeholder="Адрес доставки">
       <div class="buttons">
         <button class="button button-primery">
           <img class="btn-icon" src="./images/icon_btn.svg"  alt="user">
           <span class="btn-text">Войти</span>
         </button>
-        <button class="button">
+        <button class="button" id="button-cart">
           <img class="btn-icon" src="./images/cart.svg"  alt="cart">
           <span class="btn-text">Корзина</span>
         </button>
@@ -38,7 +44,7 @@
 
     <section class="restaurants">
       <div class="section-heading">
-        <h2 class="section-title">PizzaBurger</h2>
+        <h2 class="section-title">Тануки</h2>
         <div class="card-info">
           <div class="rating">&#9733; 4.2</div>
           <div class="price">От 1700 ₽</div>
@@ -49,8 +55,8 @@
       <!-- cards -->
 
       <div class="cards">
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.2s">
+          <img src="./images/tanuki/roll.jpg" alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
@@ -60,7 +66,7 @@
               <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -69,18 +75,18 @@
           </div>
         </div>
 
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.4s">
+          <img src="./images/tanuki/calif.jpg" alt="image"  
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              <h3 class="card-title card-title-reg">Калифорния лосось</h3>
             </div>
             <div class="card-info">
-              <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
+              <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго.</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -89,18 +95,18 @@
           </div>
         </div>
 
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.6s">
+          <img src="./images/tanuki/okinava.jpg" alt="image"  
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              <h3 class="card-title card-title-reg">Окинава стандарт</h3>
             </div>
             <div class="card-info">
-              <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
+              <div class="ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -109,18 +115,18 @@
           </div>
         </div>
 
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.2s">
+          <img src="./images/tanuki/zezar.jpg" alt="image" 
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              <h3 class="card-title card-title-reg">Цезарь маки хl</h3>
             </div>
             <div class="card-info">
-              <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
+              <div class="ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -129,18 +135,18 @@
           </div>
         </div>
 
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.4s">
+          <img src="./images/tanuki/jasai.jpg" alt="image"  
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              <h3 class="card-title card-title-reg">Ясай маки стандарт 185 г</h3>
             </div>
             <div class="card-info">
-              <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
+              <div class="ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец.</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -149,18 +155,18 @@
           </div>
         </div>
 
-        <div class="card">
-          <img src="./images/restaurants/pizza_plus.jpg"  alt="image" 
+        <div class="card animate__animated animate__bounceInUp wow" data-wow-delay="0.6s">
+          <img src="./images/tanuki/standart.jpg" alt="image"  
           class="card-image" >
           <div class="card-text">
             <div class="card-heading">
-              <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+              <h3 class="card-title card-title-reg">Ролл с креветкой стандарт</h3>
             </div>
             <div class="card-info">
-              <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори. </div>
+              <div class="ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primary">
+              <button class="button button-primery">
                 <span class="button-card-text">В корзину</span>
                 <img class="button-card-image" src="./images/shop.svg" alt="shop">
               </button>
@@ -179,7 +185,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
-          <img src="<%=require("./images/logo.svg")%>" alt="logo" class="logo footer-logo" >
+          <img src="./images/logo.svg" alt="logo" class="logo footer-logo" >
           <nav class="footer-nav">
             <a href="#" class="footer-link">Ресторанам </a>
             <a href="#" class="footer-link">Курьерам</a>
@@ -188,17 +194,89 @@
           </nav>
           <div class="social-links">
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/inst.svg")%>" alt="instagram">
+              <img src="./images/social/inst.svg" alt="instagram">
             </a>
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/face.svg")%>" alt="facebok">
+              <img src="./images/social/face.svg" alt="facebok">
             </a>
             <a href="#" class="social-link">
-              <img src="<%=require("./images/social/vk.svg")%>" alt="vk">
+              <img src="./images/social/vk.svg" alt="vk">
             </a>
           </div>
         </div>
       </div>
     </footer>
+
+   <!--  modal -->
+
+   <div class="modal">
+     <div class="modal-dialog">
+
+       <div class="modal-header">
+         <h3 class="modal-title">Корзина</h3>
+         <button class="modal-close close-cart">&times;</button>
+       </div>
+
+       <div class="modal-body">
+         <div class="food-row">
+           <span class="food-name">Ролл угорь стандарт</span>
+           <strong class="food-price">250 ₽</strong>
+           <div class="food-counter">
+             <button class="counter-button">-</button>
+             <span class="counter" >1</span>
+             <button class="counter-button">+</button>
+           </div>
+         </div>
+         <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter" >1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter" >1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter" >1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter" >1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+
+         
+     </div>
+
+     <div class="modal-footer">
+       <span class="modal-pricetag">1250 ₽</span>
+       <div class="footer-buttons">
+         <button class="button button-primery">Оформить заказ</button>
+         <button class="button close-cart">Отмена</button>
+       </div>
+     </div>
+
+   </div>
+  <script src="./pages/wow.min.js"></script>
+  <script src="./pages/index.js"></script>
 </body>
 </html>
